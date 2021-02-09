@@ -1,14 +1,14 @@
-apiVersion: v1
-kind: LimitRange
+apiVersion: "v1"
+kind: "LimitRange"
 metadata:
-  name: my-limit-range
+  name: "my-limit-range"
 spec:
   limits:
     -
-      type: Pod
+      type: "Pod"
       max:
-        cpu: 200m
-        memory: 256Mi
+        cpu: "200m"
+        memory: "256Mi"
       min:
-        cpu: 50m 
-        memory: 6Mi
+        cpu: "50m" 
+        memory: "6Mi"
