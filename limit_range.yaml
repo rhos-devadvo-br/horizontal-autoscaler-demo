@@ -4,11 +4,10 @@ metadata:
   name: "my-limit-range"
 spec:
   limits:
-    -
-      type: "Pod"
-      max:
+    - default:
+        memory: "512Mi"
         cpu: "200m"
+      defaultRequest:
         memory: "256Mi"
-      min:
-        cpu: "50m" 
-        memory: "6Mi"
+        cpu: "100m"
+      type: "Pod"
