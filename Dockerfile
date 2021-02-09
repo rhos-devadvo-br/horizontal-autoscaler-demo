@@ -8,4 +8,6 @@ WORKDIR /go/src/github.com/openshift/horizontal-autoscaler-demo
 COPY . /go/src/github.com/openshift/horizontal-autoscaler-demo
 RUN go build
 
+EXPOSE 8080
+
 CMD ["./horizontal-autoscaler-demo"]
